@@ -1,0 +1,22 @@
+<div class="wrapper">
+
+    <main>
+
+        <h4>Patients List</h4>
+        <hr>
+        <ul>
+            <li *ngFor="let patient of $patients | async">
+                <div class="details">
+                    <span>ID: {{patient.id}}</span>
+ 
+                    <span>Name: {{patient.name}}</span>
+                    <span>Surname: {{patient.surname}}</span>
+                    <span>Pesel: {{patient.pesel}}</span>
+                    <span>Phone number: {{patient.phoneNumber}}</span>
+                </div>
+            </li>
+
+        </ul>
+    </main>
+
+</div>

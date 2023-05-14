@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.wrapper {
+    display: flex;
+    color: #F2F2F2;
+    min-height: 100vh;
+    background-color: #303641;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container-login {
+    background-color: #1D1F20;
+    margin: auto;
+    width: 340px;
+    height: 610px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#title {
+    position: relative;
+    background-color: #1A1C1D;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 0.35em;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lock {
+	position: relative;
+	top: 2px;
+}
+
+
+input[type='password'] {
+    margin: auto;
+    width: 65%;
+    color: #949494;
+    background-color: #373b3d;
+    border: 1px solid #373b3d;
+    padding: 6px 0 6px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+
+input[type='text']  {
+    margin: auto;
+    width: 65%;
+    color: #949494;
+    background-color: #373b3d;
+    border: 1px solid #373b3d;
+    padding: 6px 0 6px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+input[type='email']  {
+    margin: auto;
+    width: 65%;
+    color: #949494;
+    background-color: #373b3d;
+    border: 1px solid #373b3d;
+    padding: 6px 0 6px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid #373b3d;
+}
+
+*:focus {
+    outline: none;
+}
+
+hr {
+    width: 80%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #949494;;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 25px;
+    background: #373E4A;
+    color: #C1C3C6;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:focus {
+    border: 1px solid #373b3d;
+}
+
+textarea {
+    margin: auto;
+    width: 65%;
+    color: #949494;
+    background-color: #373b3d;
+    border: 1px solid #373b3d;
+    padding: 6px 0 6px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    resize:none;
+}
+
+textarea:focus {
+    border: 1px solid #373b3d;
+}
+
+
+input[type='radio']{
+    display: inline-block;
+    color: #949494;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-lable{
+    font-size: 14px;
+    margin-right:  25px;
+}

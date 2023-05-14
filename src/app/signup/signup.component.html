@@ -1,0 +1,45 @@
+<div class="wrapper">
+
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Signup
+        </div>
+
+        <input type="radio" value="Doctor" id="doctor" name="unit" (click)="toggleForm(true)">
+        <label class="radio-lable" for="doctor">Doctor</label>
+
+        <input type="radio" value="Patient" id="patient" name="unit" (click)="toggleForm(false)" checked>
+        <label class="radio-lable" for="patient">Patient</label>
+
+        <form (submit)="submitPatinet()" [formGroup]="patientSignupForm" *ngIf="!isDoctorSignup">
+
+            <input type="text" placeholder="Username" id="username" formControlName="username" required
+                autocomplete="off">
+            <input type="password" placeholder="Password" formControlName="password" required autocomplete="off">
+            <input type="text" placeholder="Name" formControlName="name" required autocomplete="off">
+            <input type="text" placeholder="Surname" formControlName="surname" required autocomplete="off">
+            <input type="email" placeholder="Email" formControlName="email" required autocomplete="off">
+            <input type="text" placeholder="Pesel" formControlName="pesel" required autocomplete="off">
+            <input type="text" placeholder="Phone number" formControlName="phoneNumber" required autocomplete="off">
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+
+        <form (submit)="submitDoctor()" [formGroup]="doctorSignupForm" *ngIf="isDoctorSignup">
+
+            <input type="text" placeholder="Title" formControlName="title" autocomplete="off">
+            <input type="text" placeholder="Username" formControlName="username" required autocomplete="off">
+            <input type="password" placeholder="Password" formControlName="password" required autocomplete="off">
+            <input type="text" placeholder="Name" formControlName="name" required autocomplete="off">
+            <input type="text" placeholder="Surname" formControlName="surname" required autocomplete="off">
+            <input type="email" placeholder="Email" formControlName="email" required autocomplete="off">
+            <input type="text" placeholder="Pesel" formControlName="pesel" required autocomplete="off">
+            <input type="text" placeholder="Phone number" formControlName="phoneNumber" required autocomplete="off">
+            <textarea type="text" placeholder="Description" formControlName="description" rows="3" cols="5" autocomplete="off"></textarea>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+    </div>
+</div>
