@@ -1,27 +1,52 @@
 # ClinicWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+---
 
-## Development server
+## Pre-requisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Node.js
+- Npm
+- Angular CLI
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Installing Node.JS and NPM
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Go to https://nodejs.org/en/download and download installer suitable for your system.
 
-## Running unit tests
+![image](./docs-assets/1.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Perform standard installation by running downloaded file.
+4. Verify installation by running following commands in terminal
 
-## Running end-to-end tests
+```bash
+node -v 
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm -v 
+```
 
-## Further help
+4. Install Angular CLI by running below command: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install -g @angular/cli
+```
+
+5. Verify Angular CLI installation:
+
+```bash
+ng version
+```
+
+---
+
+## Build & Run
+
+1. Run `npm install` to install all dependencies.
+2. Run `ng serve` to start a dev server.
+3. Navigate to `http://localhost:4200/`.
+
+---
+
